@@ -1,0 +1,39 @@
+
+{
+"users":[
+    {
+        "Surname":"Sikwela",
+        "name":"dakalo",
+        "email":"dakalotshikwel@gmail.com",
+        "Age":24
+    },
+    
+    {
+        "Surname":"Givisto",
+        "name":"gift",
+        "email":"giftGivisto@gmail.com",
+        "Age":28
+    },
+    
+    {
+        "Surname":"Masuku",
+        "name":"Chana",
+        "email":"Chanamasuku@gmail.com",
+        "Age":27
+    },
+    
+    {
+        "Surname":"Saun",
+        "name":"Mike",
+        "email":"Mikesaun@gmail.com",
+        "Age":30
+    },
+    
+    {
+        "Surname":"Ramasala",
+        "name":"fix",
+        "email":"fixramasala@gmail.com",
+        "Age":26
+    }
+]
+}

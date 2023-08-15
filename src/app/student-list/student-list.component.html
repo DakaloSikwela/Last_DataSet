@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>{{userD[0].name}} {{userD[0].surname}}</h1>
+</div>
+<table>
+    <thead>
+        <th>Surname</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of userD">
+            <td>{{student.name}}</td>
+            <td>{{student.Surname}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.Age}}</td>
+        </tr>
+    </tbody>
+</table>
