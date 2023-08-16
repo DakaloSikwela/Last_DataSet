@@ -1,7 +1,9 @@
-table {
+
+.main {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    
   }
   
   td, th {
@@ -19,3 +21,27 @@ table {
     background-color: #04AA6D;
     color: white;
   }
+  .container{
+    border: 1px solid black;
+  
+  }
+   /* .container > img{
+    margin-left:85%;
+    height: 50px; */
+  
+  .image{
+    
+    display: flex;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  img{
+    float:right;
+    margin-left: 750px;
+    height: 70px;
+  }
+  /* .table{
+
+ margin-left: 5%;
+ margin-right: 5%;
+  } */ 

@@ -1,19 +1,26 @@
-<div class="container">
-    <h1>{{userD[0].name}} {{userD[0].surname}}</h1>
-</div>
-<table>
-    <thead>
-        <th>Surname</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Age</th>
-    </thead>
-    <tbody>
-        <tr *ngFor="let student of userD">
-            <td>{{student.name}}</td>
-            <td>{{student.Surname}}</td>
-            <td>{{student.email}}</td>
-            <td>{{student.Age}}</td>
-        </tr>
-    </tbody>
-</table>
+<!-- <div class="main"> -->
+
+    <div class="container">
+   
+        <div class="image">
+            <h1>{{userD[0].name}} {{userD[0].Surname}} </h1>
+            <img src="/assets/download.png" alt="sfgbhsfg">
+        </div>
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of userD">
+                <td>{{student.name}}</td>
+                <td>{{student.Surname}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.Age}}</td>
+            </tr>
+        </tbody>
+    </table>
+     </div>
+<!-- </div> -->
