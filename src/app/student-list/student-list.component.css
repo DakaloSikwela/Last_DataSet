@@ -45,3 +45,15 @@
  margin-left: 5%;
  margin-right: 5%;
   } */ 
+
+
+  /*icon material*
+  /
+  /* Example styles to adjust the icon colors */
+.edit-icon {
+  color: #007bff; /* Blue color */
+}
+
+.delete-icon {
+  color: #dc3545; /* Red color */
+}

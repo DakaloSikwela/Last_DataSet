@@ -1,26 +1,57 @@
-<!-- <div class="main"> -->
-
-    <div class="container">
-   
-        <div class="image">
-            <h1>{{userD[0].name}} {{userD[0].Surname}} </h1>
-            <img src="/assets/download.png" alt="sfgbhsfg">
-        </div>
+<div class="container">
+    <div class="image">
+        <h1>{{ userD[0]?.name }} {{ userD[0]?.Surname }}</h1>
+        <img src="/assets/download.png" alt="sfgbhsfg">
+    </div>
     <table class="table">
         <thead>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Email</th>
-            <th>Age</th>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let student of userD">
-                <td>{{student.name}}</td>
-                <td>{{student.Surname}}</td>
-                <td>{{student.email}}</td>
-                <td>{{student.Age}}</td>
+            <tr *ngFor="let student of userD; let i = index">
+                <td>
+                    <ng-container *ngIf="editingIndex === i; else defaultName">
+                        <input type="text" [(ngModel)]="editedStudent.name">
+                    </ng-container>
+                    <ng-template #defaultName>{{ student.name }}</ng-template>
+                </td>
+                <td>
+                    <ng-container *ngIf="editingIndex === i; else defaultSurname">
+                        <input type="text" [(ngModel)]="editedStudent.Surname">
+                    </ng-container>
+                    <ng-template #defaultSurname>{{ student.Surname }}</ng-template>
+                </td>
+                <td>
+                    <ng-container *ngIf="editingIndex === i; else defaultEmail">
+                        <input type="text" [(ngModel)]="editedStudent.email">
+                    </ng-container>
+                    <ng-template #defaultEmail>{{ student.email }}</ng-template>
+                </td>
+                <td>
+                    <ng-container *ngIf="editingIndex === i; else defaultAge">
+                        <input type="number" [(ngModel)]="editedStudent.Age">
+                    </ng-container>
+                    <ng-template #defaultAge>{{ student.Age }}</ng-template>
+                </td>
+                <td>
+                    <ng-container *ngIf="editingIndex !== i; else editingActions">
+                        <mat-icon class="edit-icon" (click)="editStudent(i)">edit</mat-icon>
+                        <mat-icon class="delete-icon" (click)="deleteStudent(i)">delete</mat-icon>
+                    </ng-container>
+                    <ng-template #editingActions>
+                        <mat-icon class="save-icon" (click)="saveEditedStudent(i)">save</mat-icon>
+                        <mat-icon class="cancel-icon" (click)="cancelEdit()">cancel</mat-icon>
+                    </ng-template>
+                </td>
             </tr>
         </tbody>
     </table>
-     </div>
-<!-- </div> -->
+    <mat-paginator [length]="userD.length" [pageSize]="pageSize" (page)="onPageChange($event)"></mat-paginator>
+    <button mat-raised-button color="primary" (click)="addStudent()">Add Entry</button>
+</div>
