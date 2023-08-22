@@ -12,4 +12,7 @@ export class UserService {
   return studentData.users;
 
   }
+  
 }
+// user.model.ts
+

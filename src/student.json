@@ -5,70 +5,308 @@
         "Surname":"Sikwela",
         "name":"Dakalo",
         "email":"dakalotshikwel@gmail.com",
-        "Age":24
+        "Age":24,
+        "photo":"assets/user1.png"
     },
     
     {
         "Surname":"Givisto",
         "name":"gift",
         "email":"giftGivisto@gmail.com",
-        "Age":28
+        "Age":28,
+        "photo":"assets/user2.png"
+
     },
     
     {
         "Surname":"Masuku",
         "name":"Chana",
         "email":"Chanamasuku@gmail.com",
-        "Age":27
+        "Age":27,
+        "photo":"assets/user3.png"
     },
     
     {
         "Surname":"Saun",
         "name":"Mike",
         "email":"Mikesaun@gmail.com",
-        "Age":30
+        "Age":30,
+        "photo":"assets/user1.png"
     },
     
     {
-        "Surname":"Ramasala",
-        "name":"fix",
-        "email":"fixramasala@gmail.com",
-        "Age":26
+        "Surname":"Rangae",
+        "name":"john",
+        "email":"johnrangae@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
     },
      
     {
-        "Surname":"Ramasala",
-        "name":"fix",
-        "email":"fixramasala@gmail.com",
-        "Age":26
+        "Surname":"baloi",
+        "name":"hlamulo",
+        "email":"hlamulobaloi@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
     },
      
     {
-        "Surname":"Ramasala",
-        "name":"fix",
-        "email":"fixramasala@gmail.com",
-        "Age":26
+        "Surname":"sadiki",
+        "name":"Una",
+        "email":"uanrtinesadiki@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
     },
      
     {
-        "Surname":"Ramasala",
-        "name":"fix",
-        "email":"fixramasala@gmail.com",
-        "Age":26
+        "Surname":"Komape",
+        "name":"Ulenda",
+        "email":"komapeulenda@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
     },
      
     {
-        "Surname":"Ramasala",
-        "name":"fix",
-        "email":"fixramasala@gmail.com",
-        "Age":26
+        "Surname":"Negondeni",
+        "name":"fhatuwani",
+        "email":"fhatuwaninegondeni@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
     },
      
     {
-        "Surname":"Ramasala",
-        "name":"fix",
-        "email":"fixramasala@gmail.com",
-        "Age":26
+        "Surname":"matozi",
+        "name":"ronewa",
+        "email":"matozironewa@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+    {
+        "Surname":"cupa",
+        "name":"lenzi",
+        "email":"lenzicupa@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"friskie",
+        "name":"kibie",
+        "email":"friskikibie@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"Sikwela",
+        "name":"brainy",
+        "email":"braintSikwela@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+    {
+        "Surname":"Sikwela",
+        "name":"Dakalo",
+        "email":"dakalotshikwel@gmail.com",
+        "Age":24,
+        "photo":"assets/user1.png"
+    },
+    
+    {
+        "Surname":"Givisto",
+        "name":"gift",
+        "email":"giftGivisto@gmail.com",
+        "Age":28,
+        "photo":"assets/user1.png"
+    },
+    
+    {
+        "Surname":"Masuku",
+        "name":"Chana",
+        "email":"Chanamasuku@gmail.com",
+        "Age":27,
+        "photo":"assets/user1.png"
+    },
+    
+    {
+        "Surname":"Saun",
+        "name":"Mike",
+        "email":"Mikesaun@gmail.com",
+        "Age":30,
+        "photo":"assets/user1.png"
+    },
+    
+    {
+        "Surname":"Rangae",
+        "name":"john",
+        "email":"johnrangae@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"baloi",
+        "name":"hlamulo",
+        "email":"hlamulobaloi@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"sadiki",
+        "name":"Una",
+        "email":"uanrtinesadiki@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"Komape",
+        "name":"Ulenda",
+        "email":"komapeulenda@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"Negondeni",
+        "name":"fhatuwani",
+        "email":"fhatuwaninegondeni@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"matozi",
+        "name":"ronewa",
+        "email":"matozironewa@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+    {
+        "Surname":"cupa",
+        "name":"lenzi",
+        "email":"lenzicupa@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"friskie",
+        "name":"kibie",
+        "email":"friskikibie@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"Sikwela",
+        "name":"brainy",
+        "email":"braintSikwela@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+    {
+        "Surname":"Sikwela",
+        "name":"Dakalo",
+        "email":"dakalotshikwel@gmail.com",
+        "Age":24,
+        "photo":"assets/user1.png"
+    },
+    
+    {
+        "Surname":"Givisto",
+        "name":"gift",
+        "email":"giftGivisto@gmail.com",
+        "Age":28,
+        "photo":"assets/user1.png"
+    },
+    
+    {
+        "Surname":"Masuku",
+        "name":"Chana",
+        "email":"Chanamasuku@gmail.com",
+        "Age":27,
+        "photo":"assets/user1.png"
+    },
+    
+    {
+        "Surname":"Saun",
+        "name":"Mike",
+        "email":"Mikesaun@gmail.com",
+        "Age":30,
+        "photo":"assets/user1.png"
+    },
+    
+    {
+        "Surname":"Rangae",
+        "name":"john",
+        "email":"johnrangae@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"baloi",
+        "name":"hlamulo",
+        "email":"hlamulobaloi@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"sadiki",
+        "name":"Una",
+        "email":"uanrtinesadiki@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"Komape",
+        "name":"Ulenda",
+        "email":"komapeulenda@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"Negondeni",
+        "name":"fhatuwani",
+        "email":"fhatuwaninegondeni@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"matozi",
+        "name":"ronewa",
+        "email":"matozironewa@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+    {
+        "Surname":"cupa",
+        "name":"lenzi",
+        "email":"lenzicupa@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"friskie",
+        "name":"kibie",
+        "email":"friskikibie@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
+    },
+     
+    {
+        "Surname":"Sikwela",
+        "name":"brainy",
+        "email":"braintSikwela@gmail.com",
+        "Age":26,
+        "photo":"assets/user1.png"
     }
 ]
 }

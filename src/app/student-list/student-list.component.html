@@ -1,11 +1,12 @@
 <div class="container">
     <div class="image">
         <h1>{{ userD[0]?.name }} {{ userD[0]?.Surname }}</h1>
-        <img src="/assets/download.png" alt="sfgbhsfg">
+        <img src="{{userD[0].photo}}" alt="s">
     </div>
-    <table class="table">
+    <table class="table" >
         <thead>
             <tr>
+                <th>photos</th>
                 <th>Name</th>
                 <th>Surname</th>
                 <th>Email</th>
@@ -16,11 +17,18 @@
         <tbody>
             <tr *ngFor="let student of userD; let i = index">
                 <td>
+                                          
+                 <img src= {{student.photo}} style="height: 50px;">
+                   
+                    
+                </td>
+                <td>
                     <ng-container *ngIf="editingIndex === i; else defaultName">
                         <input type="text" [(ngModel)]="editedStudent.name">
                     </ng-container>
                     <ng-template #defaultName>{{ student.name }}</ng-template>
                 </td>
+                
                 <td>
                     <ng-container *ngIf="editingIndex === i; else defaultSurname">
                         <input type="text" [(ngModel)]="editedStudent.Surname">
@@ -54,4 +62,5 @@
     </table>
     <mat-paginator [length]="userD.length" [pageSize]="pageSize" (page)="onPageChange($event)"></mat-paginator>
     <button mat-raised-button color="primary" (click)="addStudent()">Add Entry</button>
+
 </div>
