@@ -4,8 +4,10 @@ import { ModalService } from '../modal.service'
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'; // Import form related classes
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 //import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -14,21 +16,31 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms'; // Import f
   selector: 'app-add-student-modal-component',
   templateUrl: './add-student-modal-component.component.html',
   styleUrls: ['./add-student-modal-component.component.css']
+  
+
 })
 export class AddStudentModalComponent implements OnInit{
   @Input() userModel: any; 
+
+
+
+
   newStudent: any = {
+    photo: '/assets/',
     name: '',
     Surname: '',
     email: '',
     Age: 0
   };
-  assetsBasePath = 'assets';
+
+  
+  selectedImage: SafeResourceUrl | undefined
 
   constructor(
     public dialogRef: MatDialogRef<AddStudentModalComponent>,
     private modalService: ModalService,
     private formBuilder: FormBuilder,
+    private sanitizer: DomSanitizer,
     //public activeModal: NgbActiveModal,
     @Inject(MAT_DIALOG_DATA) public data: { callback: (student: any) => void }
   ) {}
@@ -62,6 +74,12 @@ export class AddStudentModalComponent implements OnInit{
     // Close the modal
     this.dialogRef.close();
     this.modalService.hideModal();
+
+    // After adding a new student
+    console.log(this.selectedImage )
+    
+   
+
   }
 
   onCancel(): void {

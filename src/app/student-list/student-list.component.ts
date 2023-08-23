@@ -7,6 +7,8 @@ import { MatPaginator } from '@angular/material/paginator';
 import { DataSource } from '@angular/cdk/collections';
 import { BehaviorSubject, Observable } from 'rxjs';
 import  User  from '../../student.json';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+
 
 //import { User } from '../user.model';
 
@@ -18,6 +20,7 @@ import  User  from '../../student.json';
 import { AddStudentModalComponent } from '../add-student-modal-component/add-student-modal-component.component';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'; // Import form related classes
+
 
 @Component({
   selector: 'app-student-list',
@@ -70,7 +73,7 @@ export class StudentListComponent implements OnInit {
     // Initialize the new student form
     this.newStudentForm = this.formBuilder.group({
       name: ['', Validators.required],
-      surname: ['', Validators.required],
+      surname: ['yuutut', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       age: [0, Validators.min(0)],
     });
