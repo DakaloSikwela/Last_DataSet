@@ -54,4 +54,12 @@ div {
     font-size: 12px;
     margin-top: 1px;
   }
+  .save{
+    background: green;
+    color: white;
+  }
+  .cancel{
+    background: rgb(128, 4, 0);
+    color: white;
+  }
   
